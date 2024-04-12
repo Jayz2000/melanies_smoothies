@@ -2,6 +2,7 @@
 snowflake-connector-python
 snowflake-snowpark-python
 streamlit==1.31.1
+requests
 #name: app_environment
 #channels:
 #  - snowflake
