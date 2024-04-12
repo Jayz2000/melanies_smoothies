@@ -47,3 +47,7 @@ if ingredients_list:
         session.sql(my_insert_stmt,params=(ingredients_string, name_on_order)).collect() # send to sql
         st.success(f'Your Smoothie is ordered, {name_on_order}!',icon="✅")
     
+## Let's Call the Fruityvice API from Our SniS App!
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
